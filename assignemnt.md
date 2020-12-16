@@ -183,9 +183,10 @@ SLIDE DECK FOR FRIDAY!!!
 
 No.	Slides must include…	You must explain…
 R11	An overview of your Terminal application	The main features and overall structure of your app
-R12	An overview of your code	An explanation of the important parts of your code
+R12	An overview of your code	- An explanation of the important parts of your code
 
-
+Hey every one, This is my terminal App.
+I have created a general health app, which will be upgraded as i go. For now it will allow a user to add themselves. It will alow them to enter in the items they would like to remember to take on a daily basis. It can be anything they would like.
 
 
 
@@ -194,7 +195,8 @@ FROM VARSHA
 
 Ask User for inputs   
 1. User class - create user  user = User.new 
-2. Supplement Schedule -- Class  def initialize(user})  end this class gets initialized once the user submits his / her schedule for taking in supplements  Example Data:  Iron morning  Vit C twice a day Vit D shot once a week - every Saturday  
+2. Supplement Schedule -- Class  def initialize(user})  end this class gets initialized once the user submits his / her schedule for taking in supplements 
+Example Data:  Iron morning  Vit C twice a day Vit D shot once a week - every Saturday  
 save schedule -- to a file  
 update schedule   
 delete schedule  

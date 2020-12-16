@@ -22,16 +22,25 @@ puts "Sorry thats an invalid number, please enter 1 - 10"
 gets = number.to_i
 puts "hello @(name) you have taken x/x items today. You require to take another x of @(item)
 
-puts " So @(name) How are you feeling today? (1. Good 2. Bad 3.Tired)
-gets =  [good, bad, Tired]
+puts " So @(name) How are you feeling today? (0. Good 1. Bad 2.Tired)
+
+feel =  [good, bad, Tired]
+
 
 
 puts "welcome to the main menu, here are youre choices"
 
-menu [Info on various, add/remove/modify, your items, want more energy?, exit]
+menu [Info on various items, 
+      Add/remove/modify,
+      Your items, 
+      Want quick energy?,
+      Exit
+      ]
 
 
-
+require_relative("./user.rb")
+user = Storeduser.new("Aaron", "Vitamin C", "500MG", "Morning and Night")
+user1 = Storeduser.new("Sarah", "Vitamin D", "1000IU", "Morning")
 
 
 
