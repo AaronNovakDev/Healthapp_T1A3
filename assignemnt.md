@@ -1,25 +1,18 @@
-puts "Hello and welcome to your health diary!"
-puts "What is your name freind?"
-gets name
+Hello every one, my names Aaron. And welcome to my Daily Health App.
+I am creating this app so that its very easy to use, people of all ages and educations can learn it with ease.
+I would like very one to use this app so they can help themselves stay on track , basically with anything they see fit.
+Its not just for medications and vitamins, its a general all round health app that also doubles up basically like a personal assistant, so you never forget to take your meds daily.
 
-"Ahh welcome back @{friend} / you are new around here, tell me more about yourself"
+I created the structure around the fact that a lot of people I talk to want to get healthy and stay healthy, but its very easy during youre busy day to just forget to take vitamins, minerals, greens powders, etc. What ever it is you already take, and want to keep taking and not forget.
+So it was structured around the monday to sunday pill boxes that many people use and take with them on a daily.
 
-puts "Whats Your Age #{freind}"
 
-gets = age.to_i
 
-Ask age / gender, all the medication that you would like to add into the array.
-"awesome, now let me know how much of each one you need to take and how often" 
-ok so do you want me to tell you what you need to take so far, show how much of each
-so far you have taken nothing, so get onto it, so you feel your best
-I have some nootropics that may help you to study would you like to know them?
-I have some good ways to cure a big night out, would you like to know them?
 
 Would you like alarms added to pop up and tell you to take the medication?
 I would like it to push to mobile.
 
-in future i would like to turn it into a 2dimesional map and you can walk up to each item and it will tell you why you should have it.
-Also it will ask are you feeling good, tired, bit flat, etc and then give you a list of natural things you can try to lift yourself back up, not just with caffeine.
+
 
 breathing techniques, quick stretches, few excercises, splash water on your face,binaural tones to help you change your mood to which way you want to go.
 reflexology, essential oils like peppermint oil. ginger for stomach problems.
@@ -29,7 +22,7 @@ adding electrolytes.
 
 Main Menu
 Items to take/Have taken
-Add/remove/detele Item
+Add/remove/delete Item
 Info on increasing energy ways quickly
 Info on various supps etc
 exit
