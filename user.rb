@@ -1,7 +1,13 @@
 class User
+    attr_reader :name
+    attr_accessor :items
+    attr_accessor :amount
+    attr_accessor :timesdaily
+
+    
     def initialize(name, item, amount, timesdaily)
         @name = name
-        @items  = item
+        @items  = items
         @amount = amount
         @timesdaily = timesdaily
     end
