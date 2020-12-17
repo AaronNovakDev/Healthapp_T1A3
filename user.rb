@@ -4,12 +4,12 @@ class User
     attr_accessor :amount
     attr_accessor :timesdaily
 
-    
+
     def initialize(name, item, amount, timesdaily)
         @name = name
-        @items  = items
-        @amount = amount
-        @timesdaily = timesdaily
+        @items  = []
+        @amount = []
+        @timesdaily = []
     end
 
     def print_user

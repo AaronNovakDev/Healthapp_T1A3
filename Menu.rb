@@ -26,12 +26,14 @@ feel =  [good, bad, Tired]
 
 puts "welcome to the main menu, here are youre choices"
 
-menu [Info on various items, 
-      Add/remove/modify,
-      Your items, 
-      Want quick energy?,
-      Exit
-      ]
+menu [
+      youre items list!,
+      info on various items, 
+      add/modify new item
+      remove/modify,
+      want quick energy?,
+      exit
+].capitalize
 
 
 require_relative("./user.rb")
@@ -66,35 +68,35 @@ end
 
 #add a product to the menu
 def add_product(array_products)
-    #ask for the name of the new product
+
     print "What's the name of the new product? "
-    #enter the name of the of the new product
+
     added_name = gets.chomp
-    #ask for the price
-    print "And what's the amount you wish to take for #{added_name}?"
-    #enter the price and get it
-    added_price = gets.chomp.to_f
-    #create the hash with the name and the price
-    product = {name: added_name, amount: added_price}
-    #add the hash to the array
-    #get the name and add it to the array
+    
+    print "How many times would you like #{added_name} to be taken/done?"
+   
+    amount = gets.chomp.to_f
+   
+    product = {name: added_name, amount: amount}
+    
+    
     array_products.push(product)
-    puts "Adding #{added_name} to the menu..."
-    sleep(2)
+    puts "Adding #{added_name} to youre list!"
+    sleep(1)
     print_products(array_products)
 end
 
 def delete_products(array_products)
-    #ask about the product I want to delete
+    
     print "What's the name of the product you want to delete? "
-    #enter the name of the product and get Integer
+   
     name = gets.chomp
-    #add a confirmation of deleting
+
     if array_products.any?{|product| product[:name] == name }
         print "Are you sure you want to delete it?(y/n)"
         confirm = gets.chomp
         if confirm == "y"
-            #delete product
+  
             array_products.delete_if{|product| product[:name] == name }
             puts "Deleting #{name}..."
         else 
