@@ -1,7 +1,7 @@
 def print_options
     puts "1. Show user list"
     puts "2. Add item to the user list"
-    puts "3. Edit number required of a item in the user list"
+    puts "3. Edit item from the user list"
     puts "4. Delete a item from the user list"
     puts "5. Exit"
     print "Select your option (1-5): "
@@ -12,7 +12,7 @@ def print_item(users)
     puts "This is the user list: "
    
     users.each do |user|
-        puts "#{user[:user].capitalize}: $#{user[:item]}"
+        puts "#{user[:user].capitalize}: #{user[:item]}"
     end
 end
 
@@ -35,16 +35,14 @@ end
 def delete_item(array_item)
 
     print "What's the name of the product you want to delete? "
-    #enter the name of the product and get Integer
     name = gets.chomp
-    #add a confirmation of deleting
     if array_item.any?{|item| item[:name] == name }
         print "Are you sure you want to delete it?(y/n)"
         confirm = gets.chomp
         if confirm == "y"
          
-            array_item.delete_if{|item| item[:name] == name }
-            puts "Deleting #{name}..."
+            array_item.delete_if{|item| user[:item] == item }
+            puts "Deleting #{user[item]}..."
         else 
             puts "deletion aborted..."
         end
@@ -56,21 +54,17 @@ def delete_item(array_item)
 end
 
 def update_list(array_item)
-    #ask about the price I want to update
-    print "What's the product's price you want to update? "
-    #enter the name of the product and get Integer
+    print "What's the item you want to update? "
     name = gets.chomp
-    #add a confirmation of deleting
-    if array_item.any?{|product| product[:name] == name }
-        puts "What's the new price for #{name}?"
+    if array_item.any?{|item| product[:name] == name }
+        puts "What's the item for #{user}?"
         price = gets.chomp.to_f
-        #update the price in the array
-        array_item.each do |product|
+        array_item.each do |item|
             if product[:name] == name
                 product[:price] = price
             end
         end
-        puts "Updating the price of #{name} to #{price}..."
+        puts "Updating the #{price} of #{name}..."
         
     else
         puts "#{name} is not in our menu"
@@ -82,11 +76,11 @@ end
 
 
 user = [
-    {user: "aaron", item: "vitamin c 500mg twice daily vitamin d 1000iu once daily multivitamin once daily"},
-    {user: "sarah", item: "glucosamine 5g once daily, bcaa 5g twice daily, protein powder 20g once daily"},
-    {user: "terry", item: "multivitamin once daily, steps 500 twice daily, leg stretches 20 seconds x 3 twice daily"},
-    {user: "isabelle", item: "aspirin morning, vit c 1g twice daily, seated squats 10 x twice daily, multivitamin"},
-    {user: "King George", item: "20 lashings to servent, 3 x bottles of wine, sleeping 20hrs once a day, 1 x large boar"}
+    {user: "Aaron", item: "vitamin c, vitamin d , multivitamin, fish oil, back flips 500"},
+    {user: "Sarah", item: "glucosamine, bcaa, protein powder, fish oil, multivitamin"},
+    {user: "Terry", item: "multivitamin, jump 50m, 2500 steps, leg stretches am/pm, star jumps"},
+    {user: "Isabelle", item: "aspirin, vit c, lift boulder, seated squats 20, multivitamin"},
+    {user: "King George", item: "20 killings, 5 bottle wine, sleeping 20hrs daily, large boar, 5 wenches"}
 ]
 opt=""
 while opt != "5"
@@ -95,17 +89,17 @@ while opt != "5"
     
     system "clear"
     case opt
-        when "1" #opt == "1"
+        when "1" 
             print_item(user)
         when "2"
-            puts "add product"
-            add_item(item)
+            puts "add item"
+            add_item(user)
         when "3"
             puts "edit"
-            update_item(item)
+            update_item(user)
         when "4"
             puts "delete"
-            delete_item(item)
+            delete_item(user)
         when "5"
             puts "exit"
             next
