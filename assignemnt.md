@@ -19,6 +19,8 @@ So as you can see, its just an app for every one to keep themselves happy and he
 As it says all the information if just guidlines and you can do with it as you wish.
 Each person has different brain chemistry so different dosing and vitamins / minerals work on different people, and I would highly suggest you visit your go to health person, whether its Traditional Chinese Medicine doctor, Averyvedic doctor, western medicine doctor, or other naturopaths.
 
+Ok so, ...yes, as you can see, this is what i wanted to the app to do in the first instance, but i quickly found 
+
 Yeah as it says, this is just to say thanks to the stock images that are on the Microsoft power-point app. They made it extremely easy for me to find great high quality photos for this slide show to depict exactly what it is I would like to portray to every one.
 
 And thanks very much every one for your time, and I hope you enjoyed my presentation, if you have any questions, i will try and answer them. -->

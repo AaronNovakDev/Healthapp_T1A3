@@ -13,27 +13,29 @@ def print_item(users)
    
     users.each do |user|
         puts "#{user[:user].capitalize}: #{user[:item]}"
+        #user[:item].each do
     end
 end
 
 
-def add_item(array_item)
-    print "What's the name of the new item? "
-    added_name = gets.chomp
-    print "And how many times would you like to do for #{added_name}?"
-    added_price = gets.chomp.to_f
-   
-    item = {user: added_user, item: added_item}
-
-
-    array_item.push(product)
-    puts "Adding #{added_name} to the menu..."
-    sleep(2)
-    print_item(array_item)
+def add_item(users)
+    print "What is the name of the User you wish to edit?"
+    person = gets.chomp
+    users.each do |user|
+        if user[:user] == person
+            print "What's the name of the new item? "
+            added_item = gets.chomp
+            user[:item].push(added_item)
+            puts "Adding #{added_item} to the user..."
+            sleep(2)
+            print_item(users)
+        end
+    end
 end
 
-def delete_item(array_item)
-
+def delete_item(users)
+    print "What is the name of the User you wish to edit?"
+    person = gets.chomp
     print "What's the name of the product you want to delete? "
     name = gets.chomp
     if array_item.any?{|item| item[:name] == name }
@@ -41,10 +43,10 @@ def delete_item(array_item)
         confirm = gets.chomp
         if confirm == "y"
          
-            array_item.delete_if{|item| user[:item] == item }
+            array_item.delete_if{|item| item[:name] == name }
             puts "Deleting #{user[item]}..."
         else 
-            puts "deletion aborted..."
+            puts "delete aborted!"
         end
     else
         puts "#{name} is not in our menu"
@@ -76,11 +78,11 @@ end
 
 
 user = [
-    {user: "Aaron", item: "vitamin c, vitamin d , multivitamin, fish oil, back flips 500"},
-    {user: "Sarah", item: "glucosamine, bcaa, protein powder, fish oil, multivitamin"},
-    {user: "Terry", item: "multivitamin, jump 50m, 2500 steps, leg stretches am/pm, star jumps"},
-    {user: "Isabelle", item: "aspirin, vit c, lift boulder, seated squats 20, multivitamin"},
-    {user: "King George", item: "20 killings, 5 bottle wine, sleeping 20hrs daily, large boar, 5 wenches"}
+    {user: "Aaron", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
+    {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "FishOil", "Multivitamin"]},
+    {user: "Terry", item: ["Multivitamin", "Jump 50M High", "2500 steps", "Leg Stretches AM/PM, '10,000 StarJumps"]},
+    {user: "Isabelle", item: ["Aspirin, Vitamin C, Lift Boulder 10Tonne, Seated Squats 20, Multivitamin"]},
+    {user: "King George", item: ["20 Killings", "5 Bottle Wine", "Sleeping 20hrs Day", "Eat large boar", "5 wenches"]}
 ]
 opt=""
 while opt != "5"

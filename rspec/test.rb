@@ -1,14 +1,12 @@
-require_relative '../menu.rb'
-require_relative '../user.rb'
-require_relative '../'
-require_relative '../'
+require_relative '../my_health_app.rb'
 
 describe Menu do
-    it 'it should return a user from 1 - 5' do
+    it 'It should only let you enter 1-5' do
         name = "item"
         menu = Item.new
 end
 
+describe Name do
 it 'should define a welcome method' do
     name = "My health app"
     menu = 
@@ -16,5 +14,8 @@ it 'should define a welcome method' do
 end
 
 describe Item do
-    it 'Should only let you go forward if you have entered >= 0 && <= 100'
+    it 'Should only let you go forward if you have entered an integer'
     name = "My Health App"
+end
+
+it 'should  '
