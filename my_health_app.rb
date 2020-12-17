@@ -19,6 +19,7 @@ end
 
 
 def add_item(users)
+    print_item(users)
     print "What is the name of the User you wish to edit?"
     person = gets.chomp
     users.each do |user|
@@ -34,45 +35,49 @@ def add_item(users)
 end
 
 def delete_item(users)
-    print "What is the name of the User you wish to edit?"
+    print_item(users)
+    print "What is the name of the User you wish to delete their item?"
     person = gets.chomp
-    print "What's the name of the product you want to delete? "
-    name = gets.chomp
-    if array_item.any?{|item| item[:name] == name }
-        print "Are you sure you want to delete it?(y/n)"
-        confirm = gets.chomp
-        if confirm == "y"
-         
-            array_item.delete_if{|item| item[:name] == name }
-            puts "Deleting #{user[item]}..."
-        else 
-            puts "delete aborted!"
+    
+    #print_item(users)
+    users.each do |user|
+        if user[:user] == person
+            print "What's the name of the item you wish to delete there partner? "
+            name = gets.chomp
+            print "Are you sure you want to delete it?(y/n)"
+            confirm = gets.chomp
+             if confirm == "y"
+                user[:item].delete(name) 
+                puts "Deleting #{name}..."
+            else 
+                puts "delete aborted!"
+            end
+            sleep(2)
+            print_item(users)
         end
-    else
-        puts "#{name} is not in our menu"
     end
-    sleep(2)
-    print_item(array_item)
 end
 
-def update_list(array_item)
-    print "What's the item you want to update? "
+def replace_item(users)
+    print "What is the name of the User you wish to replace the item in?"
+    person = gets.chomp   
+    print "What's the item you want to replace? "
     name = gets.chomp
-    if array_item.any?{|item| product[:name] == name }
+    if users.any?{|item| item[:name] == name }
         puts "What's the item for #{user}?"
-        price = gets.chomp.to_f
-        array_item.each do |item|
-            if product[:name] == name
-                product[:price] = price
+        name = gets.chomp.to_f
+        users.each do |item|
+            if user[:item] == item
+                user[:item] = item
             end
         end
-        puts "Updating the #{price} of #{name}..."
+        puts "Replacing existing with new item #{name}..."
         
     else
-        puts "#{name} is not in our menu"
+        puts "#{name} is not on the supplement list, please choose again"
     end
     sleep(2)
-    print_item(array_item)
+    print_item(users)
 end
 
 
@@ -97,8 +102,8 @@ while opt != "5"
             puts "add item"
             add_item(user)
         when "3"
-            puts "edit"
-            update_item(user)
+            puts "replace"
+            replace_item(user)
         when "4"
             puts "delete"
             delete_item(user)

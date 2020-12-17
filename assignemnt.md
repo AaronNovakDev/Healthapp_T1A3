@@ -1,14 +1,24 @@
 <!-- Hello every one, my names Aaron. And welcome to my Daily Health App.
-I am creating this app so that its very easy to use, people of all ages and educations can learn it with ease.
-I would like very one to use this app so they can help themselves stay on track , basically with anything they see fit.
+
+
+
+I am creating this app so that its very easy to use, people of all ages and levels of education can learn it with ease.
+I would like every one to use this app so they can help themselves stay on track , basically with anything they see fit.
 Its not just for medications and vitamins, its a general all round health app that also doubles up basically like a personal assistant, so you never forget to take your meds daily.
+
 
 I created the structure around the fact that a lot of people I talk to want to get healthy and stay healthy, but its very easy during youre busy day to just forget to take vitamins, minerals, greens powders, etc. What ever it is you already take, and want to keep taking and not forget.
 So it was structured around the monday to sunday pill boxes that many people use and take with them on a daily.
 
-So as you can see it is mainly an app that i created firstly just for a person to input all there medical data they would like to remember and continue to take on a daily, but you can also add in anything else you would like to accomplish on a daily. Would you like to do 100 star jumps a day spread into twice a day, then you can add that into the array and you can pull out that data any time you like. So its going to be very versitile once its completed.
 
+So as you can see it is mainly an app that i created firstly just for a person to input all there medical data they would like to remember and continue to take on a daily, but you can also add in anything else you would like to accomplish on a daily. Would you like to do 100 star jumps a day spread into twice a day, then you can add that into the array and you can pull out that data any time you like. So its going to be very versitile once its completed. 
+
+
+Created with the use of Iterations, 
 At the main menu all you need to do to add modify or delete an item is click on the menu item and then it will ask which item you would like to modify. You can then either replace it or delete it completely if you dont require to take that medication or etc, any more.
+
+
+
 
 I also will put in a bonus tab for people that are going into meeting or studying so that they can acheive the most information to be absorbed via various methods of keeping yourself alert and in a great mind set for learning.
 
