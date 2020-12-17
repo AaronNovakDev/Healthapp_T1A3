@@ -179,7 +179,8 @@ Utilise a suitable project management platform to track this implementation plan
 
 
 
-R10	Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
+**R10**
+Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
 
 You must include:
 - steps to install the application.
@@ -198,6 +199,34 @@ The will require Ruby to be installed.
 Minimum specs to run a command line app, are the most basic of computers.
 A PC or Laptop > 2000.
 A keyboard.
+
+**R11 & R12**
+
+Created and attached to the zip file.
+
+**R13**
+
+Implement features in the software development plan you have designed. You must utilise a range of programming concepts and structures using Ruby such as:
+- variables and variable scope
+- loops and conditional control structures
+- write and utilise simple functions
+- error handling
+- input and output
+- importing a Ruby Gem
+- using functions from a Ruby Gem
+
+
+**R14**
+*Apply DRY (Don’t Repeat Yourself) coding principles to all code produced.*
+
+-Applied to the best of my abilities.
+
+**R15**
+
+*Apply all style and conventions for the programming language consistently to all code produced.*
+
+-Applied to the best of knowledge, capabilities and abilities.
+
 
 
 
