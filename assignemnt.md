@@ -227,6 +227,25 @@ Implement features in the software development plan you have designed. You must 
 
 -Applied to the best of knowledge, capabilities and abilities.
 
+**R16**
+*Creates an application which runs without error and has features that are consistent with the development plan.*
+
+- I will try my best!
+
+**R17**
+Design TWO tests which check that the application is running as expected.
+
+Each test should:
+- cover a different feature of the application
+- state what is being tested
+
+I will be testing the user to make sure they typed in the correct name when they are trying to edit or delete and item from the array.
+
+The other ill be testing is the fact that the loop goes back once the delete array button has been done, it must go back to the main menu.
+
+
+- provide at least TWO test cases and the expected results for each test case
+
 
 
 
