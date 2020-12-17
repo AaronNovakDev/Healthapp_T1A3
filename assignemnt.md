@@ -51,18 +51,21 @@ And thanks very much every one for your time, and I hope you enjoyed my presenta
 
 
 
-**Q4**
+**R4**
  *Provide a link to your source control repository*
 
  https://github.com/AaronNovakDev - main site
  https://github.com/AaronNovakDev/Healthapp_T1A3 - AaronNovak_T13A git repo
 
+*Design a Software Development Plan for a terminal application. The following requirements provide details of what needs to be included in this plan*
+
+![flowchart](./flowchart_terminalapp.png)
 
 
 
 
-	
-**R5**	
+**R5**
+
 *Develop a statement of purpose and scope for your application. It must include:*
 
 - *describe at a high level what the application will do.*
@@ -95,7 +98,7 @@ It will have a guideline for supplements that I over time have studied and worke
 
 
 
-
+**R6**
 
 **Develop a list of features that will be included in the application. It must include:**
 - *at least THREE features.*
@@ -112,15 +115,19 @@ I will allow for an add, delete and replace of the item they wish to insert into
 I will add in error handling so that they cant enter in amount which is either too much or not enough. I will also add in the error of an incorrect name and then go back to add user if its been used before.
 
 
-Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
-- use of variables and the concept of variable scope
-- loops and conditional control structures
-- error handling
+**Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:**
+- *use of variables and the concept of variable scope*
+- *loops and conditional control structures*
+- *error handling*
+
+Yes!
 
 
+
+**R7**
 
 **Develop an outline of the user interaction and experience for the application.**
-Your outline must include:
+*Your outline must include:*
 - *how the user will find out how to interact with / use each feature.*
 
 The app will up ask you your name and let you enter in all the details you wish to enter.
@@ -143,11 +150,11 @@ The errors will be handled in a way that you cant enter in the wrong information
 - show the workflow/logic and/or integration of the features in your application for each feature.
 - utilise a recognised format or set of conventions for a control flow diagram, such as UML.
 
+![flowchart](./flowchart_terminalapp.png) ??
 
 
 
-
-** Q9 **
+**R9**
 
 - *Develop an implementation plan which:*
 - outlines how each feature will be implemented and a checklist of tasks for each feature
