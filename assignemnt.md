@@ -1,4 +1,4 @@
-Hello every one, my names Aaron. And welcome to my Daily Health App.
+<!-- Hello every one, my names Aaron. And welcome to my Daily Health App.
 I am creating this app so that its very easy to use, people of all ages and educations can learn it with ease.
 I would like very one to use this app so they can help themselves stay on track , basically with anything they see fit.
 Its not just for medications and vitamins, its a general all round health app that also doubles up basically like a personal assistant, so you never forget to take your meds daily.
@@ -6,56 +6,46 @@ Its not just for medications and vitamins, its a general all round health app th
 I created the structure around the fact that a lot of people I talk to want to get healthy and stay healthy, but its very easy during youre busy day to just forget to take vitamins, minerals, greens powders, etc. What ever it is you already take, and want to keep taking and not forget.
 So it was structured around the monday to sunday pill boxes that many people use and take with them on a daily.
 
+So as you can see it is mainly an app that i created firstly just for a person to input all there medical data they would like to remember and continue to take on a daily, but you can also add in anything else you would like to accomplish on a daily. Would you like to do 100 star jumps a day spread into twice a day, then you can add that into the array and you can pull out that data any time you like. So its going to be very versitile once its completed.
+
+At the main menu all you need to do to add modify or delete an item is click on the menu item and then it will ask which item you would like to modify. You can then either replace it or delete it completely if you dont require to take that medication or etc, any more.
+
+I also will put in a bonus tab for people that are going into meeting or studying so that they can acheive the most information to be absorbed via various methods of keeping yourself alert and in a great mind set for learning.
 
 
+I would like to eventually add in a bonus tab with fun facts that people may not know, ive always liked random facts and I think they would be beneficial to any and every one.
 
-Would you like alarms added to pop up and tell you to take the medication?
-I would like it to push to mobile.
+So as you can see, its just an app for every one to keep themselves happy and healthy. The healthier you are the happier you are. 
+As it says all the information if just guidlines and you can do with it as you wish.
+Each person has different brain chemistry so different dosing and vitamins / minerals work on different people, and I would highly suggest you visit your go to health person, whether its Traditional Chinese Medicine doctor, Averyvedic doctor, western medicine doctor, or other naturopaths.
 
+Yeah as it says, this is just to say thanks to the stock images that are on the Microsoft power-point app. They made it extremely easy for me to find great high quality photos for this slide show to depict exactly what it is I would like to portray to every one.
 
-
-breathing techniques, quick stretches, few excercises, splash water on your face,binaural tones to help you change your mood to which way you want to go.
-reflexology, essential oils like peppermint oil. ginger for stomach problems.
-msm, acv, lemons, honey in morning for detox.
-
-adding electrolytes.
-
-Main Menu
-Items to take/Have taken
-Add/remove/delete Item
-Info on increasing energy ways quickly
-Info on various supps etc
-exit
+And thanks very much every one for your time, and I hope you enjoyed my presentation, if you have any questions, i will try and answer them. -->
 
 
 
 
+**Q4**
+ *Provide a link to your source control repository*
 
-
-
-
-
-
-
-
-
-Q4 - Provide a link to your source control repository - https://github.com/AaronNovakDev
-
+ https://github.com/AaronNovakDev
 
 
 
 
 
 	
-R5	Develop a statement of purpose and scope for your application. It must include:
-- describe at a high level what the application will do
+**R5**	
+*Develop a statement of purpose and scope for your application. It must include:*
+
+- *describe at a high level what the application will do.*
 
 My application is going to start off its life as just a program that you sign in under youre name and then you add what medications and personal vitamins, minerals and other things that you would like to take on a daily and not forget. Eventually i want the app to add in more and more functions that will help you get healthy and stay healthy. It will also add in alternate options such as reflexology , essential oils and breathing techniques. It will also add in quick fixes like splashing freezing cold water on youre face, doing small excercises to wake yourself up quickly if your in meetings and feeling tired. I would eventually like to have it have pop up type messages on your phone so that you will never miss what ever it is you want to consume. For some people it may even be a reminder to eat, as some people say they always forget to eat and often set timers to remind them.
 
 
 
-
-- identify the problem it will solve and explain why you are developing it.
+- *identify the problem it will solve and explain why you are developing it.*
 
 It will solve the problems that people always tell me they want to try and get healthy and but they never know what to take, and when to take it, and also tell you what you should take to feel better for increasing energy and cognitive power. Many people either dont know what to take, or when to take it and how much.
 It is all just examples of course, as i dont want people to say that I told them to take what and when if they get sick ,etc. Every ones body is different after all, its just a guide through what ive learnt through-out my life. I will add as many studies as I can eventually as well.
@@ -63,14 +53,14 @@ It is all just examples of course, as i dont want people to say that I told them
 
 
 
-- identify the target audience
+- *identify the target audience.*
 
 My target audience is every one that is trying to look after their health, and over my years i know a lot of people do want to try and look after their health but they seem to lack the knowledge and information to make them help them selves, so i am creating this app for any one that honestly does forget when to take supplements and vitamins, and it will let them know what they should take and when they should take it, its entirely up to them if they take it, they are only guidlines.
 Of course you need to take vitamins etc for a while, so I will reccomend them to take them for a minimum of at least a week, but its entirely up to them on what i may suggest. The info they put in will be entirely up to them if they wish to choose, with what alergies or medical problems they have that may not allow them to take certain vitamins and minerals.
 
 
 
-- explain how a member of the target audience will use it
+- *explain how a member of the target audience will use it.*
 
 They will log in to the app with their name, initially they will enter in the items they want to add and the amount of times a day they take them. Eventually if they explore the app they find that there is a lot of valuable information on various items that I will put in the app. It will go through a loop style that will ask them what they want to add, how they are feeling, if they would like inforamtion on how they may be able to take something that might help them feel better.
 If they choose that they are ok, the it will continue down to the main menu, which will tell them what they have and havent taken on that particular day.
@@ -81,15 +71,18 @@ It will have a guideline for supplements that I over time have studied and worke
 
 
 
-Develop a list of features that will be included in the application. It must include:
-- at least THREE features
-- describe each feature
+**Develop a list of features that will be included in the application. It must include:**
+- *at least THREE features.*
+- *describe EACH feature*
 
 
-The 3 features im going to encorperate in my program are going to be being able to add unlimited users, with each one having their own health hisitory that they would add in, and then on top of that I would let them know some alternative ways to do what they would like to accomplish, it could be energy, better sleep, better cognition, etc.
-The second feature would be me asking them if they have had a big night or if they are feeling good. It would them give them a list of supplements to aid them through the day with what they desire. If they have had a big night it would ask you and it would give you a list of how what you might take to make you better.
-the third one i would have is a list of the supplements and their back ground of history of reasearch on why they work.
+The 1st feature im going to encorperate in my program are going to be being able to add unlimited users, with each one having their own health history that they would add in, and then on top of that I would let them know some alternative ways to do what they would like to accomplish, it could be energy, better sleep, better cognition, etc.
+
+The 2nd feature would be me asking them if they have had a big night or if they are feeling good. It would them give them a list of supplements to aid them through the day with what they desire. If they have had a big night it would ask you and it would give you a list of how what you might take to make you better.
+
+The 3rd one i would have is a list of the supplements and their back ground of history of reasearch on why they work.
 I will allow for an add, delete and replace of the item they wish to insert into the loop and then they can modify the amount of times they wish to take it a day.
+
 I will add in error handling so that they cant enter in amount which is either too much or not enough. I will also add in the error of an incorrect name and then go back to add user if its been used before.
 
 
@@ -100,21 +93,27 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 
 
 
-Develop an outline of the user interaction and experience for the application.
+**Develop an outline of the user interaction and experience for the application.**
 Your outline must include:
-- how the user will find out how to interact with / use each feature
-- how the user will interact with / use each feature
-- how errors will be handled by the application and displayed to the user
+- *how the user will find out how to interact with / use each feature.*
 
-
-The app will straight up ask you your name and let you enter in all the details you wish to enter.
+The app will up ask you your name and let you enter in all the details you wish to enter.
 Once you have enetered them  it all ask you how frequently you wish to take each item, and also how many times a day.
 It would then ask you if you would like some further suggestions that have been studied over time that can aid in what you would like to acheive.
+
+
+- *how the user will interact with / use each feature*
+
 They will just need to click each button in the terminal app that they wish to explore. There will be a main menu that will show all the content, but it will also give you some suggested options. 
+
+- *how errors will be handled by the application and displayed to the user*
+
+
 The errors will be handled in a way that you cant enter in the wrong information or it will tell you that its not correct and ask you to try again and go back in the loop.
 
 
-Develop a diagram which describes the control flow of your application. Your diagram must:
+*Develop a diagram which describes the control flow of your application. Your diagram must:*
+
 - show the workflow/logic and/or integration of the features in your application for each feature.
 - utilise a recognised format or set of conventions for a control flow diagram, such as UML.
 
@@ -122,7 +121,9 @@ Develop a diagram which describes the control flow of your application. Your dia
 
 
 
-Q9 - Develop an implementation plan which:
+** Q9 **
+
+- *Develop an implementation plan which:*
 - outlines how each feature will be implemented and a checklist of tasks for each feature
 
 
@@ -194,3 +195,9 @@ save schedule -- to a file
 update schedule   
 delete schedule  
 3. Suggestion -- Class  suggest supplements - depending on user schedule
+
+
+
+User - input data, can save to file etc .
+enter in medication / supplements and modify/delete/add
+various - to 5 different things - sleep, study, relax, quick energy, bonus.

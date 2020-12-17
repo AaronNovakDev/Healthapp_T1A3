@@ -1,5 +1,5 @@
-require_relative '../menu'
-require_relative '../'
+require_relative '../menu.rb'
+require_relative '../user.rb'
 require_relative '../'
 require_relative '../'
 
@@ -14,3 +14,7 @@ it 'should define a welcome method' do
     menu = 
     expect(myhealthapp.welcome).to eq(nil)
 end
+
+describe Item do
+    it 'Should only let you go forward if you have entered >= 0 && <= 100'
+    name = "My Health App"

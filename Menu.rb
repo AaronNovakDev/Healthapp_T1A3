@@ -1,8 +1,5 @@
 puts "Hello friend! Welcome to your health app"
 puts  "What is youre @(name)?"
-
-If name = already in hash , go to @(feeling)
-
 gets = name.chomp
 puts "Nice to meet you @(name), please enter in your age"
 gets = age.chomp
@@ -17,7 +14,6 @@ you so that I can help you with what you need to take daily."
 puts "add @(item) now, please"
 gets = (@item)
 puts "No problem, and how many times a day would you like to take @(item), @(number) (add 1 - 10) now please?"
-If item is < 0 or > 10 
 puts "Sorry thats an invalid number, please enter 1 - 10"
 gets = number.to_i
 puts "hello @(name) you have taken x/x items today. You require to take another x of @(item)
