@@ -157,16 +157,16 @@ The errors will be handled in a way that you cant enter in the wrong information
 **R9**
 
 - *Develop an implementation plan which:*
-- outlines how each feature will be implemented and a checklist of tasks for each feature
+- *outlines how each feature will be implemented and a checklist of tasks for each feature*
+
+Created on the trello board
+
+
+- *prioritise the implementation of different features, or checklist items within a feature*
 
 
 
-
-- prioritise the implementation of different features, or checklist items within a feature
-
-
-
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
+- *provide a deadline, duration or other time indicator for each feature or checklist/checklist-item*
 
 Utilise a suitable project management platform to track this implementation plan - Yes - im useing a Trello Board.
 
@@ -185,35 +185,19 @@ You must include:
 - steps to install the application.
 
 To install the application you wont require any additional software apart from having windows, linux or apple OS installed.
-The item has been converted to a script, so all you will need to do it double click it and it will open into a terminal app.
+The item has been converted to a terminal application, so all you will need to do it double click it and it will open into a terminal app.
 Most modern laptops and computers have some version of a terminal app installed on the standard operating system software.
 
 
 - any dependencies required by the application to operate.
 
-The only one you will need is a computer with an operating system
-
+The will require Ruby to be installed.
 
 - any system/hardware requirements
 
 Minimum specs to run a command line app, are the most basic of computers.
 A PC or Laptop > 2000.
-
-
-
-
-
-
-
-SLIDE DECK FOR FRIDAY!!!
-
-
-No.	Slides must include…	You must explain…
-R11	An overview of your Terminal application	The main features and overall structure of your app
-R12	An overview of your code	- An explanation of the important parts of your code
-
-Hey every one, This is my terminal App.
-I have created a general health app, which will be upgraded as i go. For now it will allow a user to add themselves. It will alow them to enter in the items they would like to remember to take on a daily basis. It can be anything they would like.
+A keyboard.
 
 
 

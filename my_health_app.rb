@@ -38,8 +38,6 @@ def delete_item(users)
     print_item(users)
     print "What is the name of the User you wish to delete their item?"
     person = gets.chomp
-    
-    #print_item(users)
     users.each do |user|
         if user[:user] == person
             print "What's the name of the item you wish to delete there partner? "
