@@ -1,3 +1,16 @@
+require "tty-prompt"
+
+prompt = TTY::Prompt.new
+
+prompt.ask("What is your name?", default: ENV["USER"])
+
+choices = %w(beer expresso-martini coffee water-thanks!)
+prompt.multi_select("Select youre drink of choice and welcome in!", choices)
+
+p "Nice Choice!"
+
+sleep(2)
+
 def print_options
     puts "1. Show user list"
     puts "2. Add item to the user list"
@@ -57,6 +70,7 @@ def delete_item(users)
 end
 
 def replace_item(users)
+    print_item(users)
     print "What is the name of the User you wish to replace the item in?"
     person = gets.chomp   
     print "What's the item you want to replace? "
@@ -81,7 +95,7 @@ end
 
 
 user = [
-    {user: "Aaron", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
+    {user: "Peter", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
     {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "FishOil", "Multivitamin"]},
     {user: "Terry", item: ["Multivitamin", "Jump 50M High", "2500 steps", "Leg Stretches AM/PM, '10,000 StarJumps"]},
     {user: "Isabelle", item: ["Aspirin, Vitamin C, Lift Boulder 10Tonne, Seated Squats 20, Multivitamin"]},

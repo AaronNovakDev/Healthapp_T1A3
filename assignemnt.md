@@ -266,3 +266,9 @@ delete schedule
 User - input data, can save to file etc .
 enter in medication / supplements and modify/delete/add
 various - to 5 different things - sleep, study, relax, quick energy, bonus.
+
+
+Vitamin B, Tulsi , gotu kola
+
+a = ARTII::Base.new
+TTY::Prompt.new
