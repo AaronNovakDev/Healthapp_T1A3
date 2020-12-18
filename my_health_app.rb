@@ -8,7 +8,7 @@ choices = %w(beer expresso-martini coffee water-thanks!)
 prompt.multi_select("Select youre drink of choice and welcome in!", choices)
 
 p "Nice Choice!"
-
+p "Fetching the Main Menu, Just a moment...."
 sleep(2)
 
 def print_options
@@ -33,7 +33,7 @@ end
 
 def add_item(users)
     print_item(users)
-    print "What is the name of the User you wish to edit?"
+    print "What is the name of the user you wish to edit?"
     person = gets.chomp
     users.each do |user|
         if user[:user] == person
@@ -49,7 +49,7 @@ end
 
 def delete_item(users)
     print_item(users)
-    print "What is the name of the User you wish to delete their item?"
+    print "What is the name of the user you wish to delete their item?"
     person = gets.chomp
     users.each do |user|
         if user[:user] == person
@@ -71,12 +71,12 @@ end
 
 def replace_item(users)
     print_item(users)
-    print "What is the name of the User you wish to replace the item in?"
+    print "What is the name of the user you wish to replace the item in?"
     person = gets.chomp   
     print "What's the item you want to replace? "
     name = gets.chomp
-    if users.any?{|item| item[:name] == name }
-        puts "What's the item for #{user}?"
+    if users.any?{|user| user[:item] == item }
+        puts "What's the new item you would like to replace with #{@name}?"
         name = gets.chomp.to_f
         users.each do |item|
             if user[:item] == item
@@ -95,10 +95,10 @@ end
 
 
 user = [
-    {user: "Peter", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
-    {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "FishOil", "Multivitamin"]},
+    {user: "Paul", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
+    {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "FishOil", "Creatine 5G"]},
     {user: "Terry", item: ["Multivitamin", "Jump 50M High", "2500 steps", "Leg Stretches AM/PM, '10,000 StarJumps"]},
-    {user: "Isabelle", item: ["Aspirin, Vitamin C, Lift Boulder 10Tonne, Seated Squats 20, Multivitamin"]},
+    {user: "Isabelle", item: ["Creatine", "EAA 5G", "Lift Boulder 10Tonne", "Seated Squats 20", "Multivitamin"]},
     {user: "King George", item: ["20 Killings", "5 Bottle Wine", "Sleeping 20hrs Day", "Eat large boar", "5 wenches"]}
 ]
 opt=""
