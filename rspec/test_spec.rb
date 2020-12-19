@@ -1,24 +1,12 @@
-require_relative '../my_health_app.rb'
+# require_relative '../my_health_app.rb'
 
-describe Menu do
-    it 'It should only let you enter 1-5' do
-        name = "item"
-        menu = Item.new
-end
+# describe print_options do
+#     options = ["1","2","3","4","5"]
+#     it 'It should return a value between 1,2,3,4 OR 5' do 
+#         expect(print_options).to eq()
+#     end
+# end
 
-describe Name do
-it 'should define a welcome method' do
-    name = "My health app"
-    menu = 
-    expect(myhealthapp.welcome).to eq(nil)
-end
 
-describe Item do
-    it 'Should only let you go forward if you have entered an integer'
-    name = "My Health App"
-end
 
-it 'should  '
 
-describe Delete do
-    it 'should only let you delete an item out of the array"

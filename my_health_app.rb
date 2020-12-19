@@ -2,6 +2,12 @@ require "tty-prompt"
 require "colorize"
 require "bundler"
 require "rspec"
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
 
 #Added this TTY Prompt for future use, each person will need to login.
 prompt = TTY::Prompt.new
@@ -31,20 +37,22 @@ puts "FETCHING THE MAIN MENU PLEASE WAIT...".red.bold.underline
 sleep(2)
 
 #This is the main menu list
-def print_options
-    puts "1. Show user list".yellow
-    puts "2. Add item to the user list".green
-    puts "3. Edit item from the user list".yellow
-    puts "4. Delete a item from the user list".red
-    puts "5. Exit".green.bold.underline
-    print "Select your option (1-5):".light_blue
-    option = gets.chomp
-    return option
-    # if !print_options.include?(input_option)
-    #     puts "Sorry, I was expecting an integer: 1,2,3,4 or 5"
-    #     next
-    # end
-end
+
+    def print_options
+        # while true
+        options = ["1","2","3","4","5"]
+        puts "1. Show user list".yellow
+        puts "2. Add item to the user list".green
+        puts "3. Edit item from the user list".yellow
+        puts "4. Delete a item from the user list".red
+        puts "5. Exit".green.bold.underline
+        print "Select your option (1-5):".light_blue
+        input_option = gets
+        if !options.include?(input_option)
+            puts "Sorry, I was expecting an integer: 1,2,3,4 OR 5"
+        end
+    end
+
 def print_item(users)
     puts "This is the user list: "
    
@@ -97,11 +105,11 @@ end
 #This is the replace an item from user code.
 def replace_item(users)
     print_item(users)
-    print "What is the name of the user you wish to replace the item in?".
+    print "What is the name of the user you wish to replace the item in?".light_blue
     person = gets.chomp   
     
     if users.any?{|user| user[:user] == person }
-        print "What's the item you want to replace? ".yellow
+        print "What's the item you want to replace? ".green
         name = gets.chomp
         users.each do |user|
             if user[:user] == person
@@ -130,10 +138,10 @@ end
 #This is my array of users with their items.
 user = [
     {user: "Paul", item: ["Vitamin C", "Vitamin D" , "Multivitamin", "Fish Oil", "Back-Flips 5000", "Wrestle Lion"]},
-    {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "FishOil", "Creatine 5G"]},
+    {user: "Sarah", item: ["Glucosamine", "BCAA", "ProteinPowder", "Fish Oil", "Creatine 5G"]},
     {user: "Terry", item: ["Multivitamin", "Jump 50M High", "2500 steps", "Leg Stretches AM/PM, '10,000 StarJumps"]},
-    {user: "Isabelle", item: ["Creatine", "EAA 5G", "Lift Boulder 10Tonne", "Seated Squats 20", "Multivitamin"]},
-    {user: "Kinggeorge", item: ["20 Killings", "5 Bottle Wine", "Sleeping 20hrs Day", "Eat large boar", "5 wenches"]}
+    {user: "Isabelle", item: ["Creatine", "EAA 5G", "Lift 500KG Boulder", "Seated Squats 20", "Multivitamin"]},
+    {user: "Kinggeorge", item: ["20 Beheadings", "5 Bottle Wine", "Sleeping 20hrs Day", "Eat large boar", "5 wenches"]}
 ]
 opt=""
 while opt != "5"
@@ -157,7 +165,7 @@ while opt != "5"
             puts "exit"
             next
         else
-            puts "invalid option".grey
+            puts "invalid option".red
     end
     puts "press Enter key to continue...".green
     gets
