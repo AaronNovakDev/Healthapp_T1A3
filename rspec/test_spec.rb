@@ -19,3 +19,5 @@ describe Item do
 end
 
 it 'should  '
+
+Deleting an item that isnt in the list
