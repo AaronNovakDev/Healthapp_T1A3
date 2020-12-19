@@ -20,4 +20,5 @@ end
 
 it 'should  '
 
-Deleting an item that isnt in the list
+describe Delete do
+    it 'should only let you delete an item out of the array"
