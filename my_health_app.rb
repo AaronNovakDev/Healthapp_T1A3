@@ -9,7 +9,13 @@ require "rspec"
   }
 }
 
-puts ARGV
+if ARGV.length > 0
+     name = ARGV[0]
+else
+    print "Whats your user name?"
+    name = gets.chomp
+    
+end
 
 #Added this TTY Prompt for future use, each person will need to login.
 prompt = TTY::Prompt.new

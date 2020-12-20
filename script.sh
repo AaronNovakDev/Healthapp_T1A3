@@ -1,3 +1,5 @@
 #!/bin/bash
 
-ruby my_health_app.rb
+echo $!
+
+ruby my_health_app.rb 
