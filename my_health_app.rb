@@ -9,6 +9,8 @@ require "rspec"
   }
 }
 
+puts ARGV
+
 #Added this TTY Prompt for future use, each person will need to login.
 prompt = TTY::Prompt.new
 prompt.ask("What is your name?", default: ENV["USER"])
@@ -47,10 +49,12 @@ sleep(2)
         puts "4. Delete a item from the user list".red
         puts "5. Exit".green.bold.underline
         print "Select your option (1-5):".light_blue
-        input_option = gets
-        if !options.include?(input_option)
-            puts "Sorry, I was expecting an integer: 1,2,3,4 OR 5"
-        end
+        input_option = gets.strip
+    # This code isnt working so i have removed it. It was creating an inifite loop.
+    #     if !options.include?(input_option)
+    #         puts "Sorry, I was expecting an integer: 1,2,3,4 OR 5"
+    #     end
+    # return options
     end
 
 def print_item(users)
